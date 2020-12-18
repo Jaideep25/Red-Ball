@@ -108,7 +108,7 @@ function draw() {
    ball.rotationSpeed = 10;
    ball.x = 70;
    
-  if(keyDown("space")||mousePressedOver(back)) {
+  if(keyDown("space")||mousePressedOver(back)||mousePressedOver(back)) {
         ball.velocityY = -15;
         jumpS.play();    
     }
