@@ -45,8 +45,14 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(600,450);
-  
+
+  var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') != -1) || (navigator.userAgent.toLowerCase().indexOf('iphone') != -1);
+
+  var SCREEN_WIDTH = window.innerWidth;
+  var SCREEN_HEIGHT = window.innerHeight;
+
+  createCanvas(SCREEN_HEIGHT, SCREEN_WIDTH);
+
   back = createSprite(300,170,600,450);
   back.addImage(backI);
  
@@ -108,7 +114,7 @@ function draw() {
    ball.rotationSpeed = 10;
    ball.x = 70;
    
-  if(keyDown("space")||mousePressedOver(back)||mousePressedOver(back)) {
+  if(keyDown("space")||mousePressedOver(back)) {
         ball.velocityY = -15;
         jumpS.play();    
     }
