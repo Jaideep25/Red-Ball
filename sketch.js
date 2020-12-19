@@ -53,7 +53,7 @@ function setup() {
 
   createCanvas(SCREEN_WIDTH,SCREEN_HEIGHT);
 
-  back = createSprite(300,170,600,450);
+  back = createSprite(SCREEN_WIDTH/2,SCREEN_HEIGHT/2,600,450);
   back.addImage(backI);
  
   ball = createSprite(80,150,20,20);
@@ -71,17 +71,17 @@ function setup() {
   invisible4 = createSprite(95,200,1,400);
   invisible4.visible = false;
   
-  overB = createSprite(300,230,10,10);
+  overB = createSprite(SCREEN_WIDTH/2,SCREEN_HEIGHT/2,10,10);
   overB.addImage(overBI);
   overB.scale = 1.5;
   overB.visible = false;
 
-  restart = createSprite(300,200,10,10);
+  restart = createSprite(SCREEN_WIDTH/4,SCREEN_HEIGHT/4,10,10);
   restart.addImage(restartI);           
   restart.scale = 0.1;
   restart.visible = false;
   
-  over = createSprite(300,70,10,10);
+  over = createSprite(SCREEN_WIDTH/2,SCREEN_HEIGHT/2,10,10);
   over.addImage(overI);
   over.scale = 0.7;
   over.visible = false;
