@@ -51,7 +51,7 @@ function setup() {
   var SCREEN_WIDTH = window.innerWidth;
   var SCREEN_HEIGHT = window.innerHeight;
 
-  createCanvas(SCREEN_HEIGHT, SCREEN_WIDTH);
+  createCanvas(SCREEN_WIDTH,SCREEN_HEIGHT);
 
   back = createSprite(300,170,600,450);
   back.addImage(backI);
